@@ -50,7 +50,7 @@ class Cell {
             activeNeighborCount += neighborCells[i].isActive
         };
 
-        return (activeNeighborCount % 2 == 1);
+        return (mod(activeNeighborCount, 2) == 1);
     };
 };
 
