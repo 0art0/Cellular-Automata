@@ -8,7 +8,18 @@
     </head>
 
     <body bgcolor="white">
-	    <h1> The Replicating Automaton</h1>
+	<h1> The Replicating Automaton</h1>
+
+        <div align = "center">
+            <canvas id = "grid" width = 1750px height = 1750px style = "border:3px solid gray">
+            </canvas>
+        <br><br>
+        <a onclick="playPause();" class="button" id = "playpausebutton">PLAY</a>
+        <a onclick="resetBoard();" class="button" id = "resetbutton">RESET</a>
+        <p id = "messagelog"></p>
+        </div>
+
+        <script src="repl.js"></script>
 
 	<p>Consider an infinite two-dimensional grid of square cells which can be coloured either white or black
 (see the interactive application). The white tiles represent the state 0 and the black tiles represent
@@ -23,15 +34,5 @@ cells are updated simultaneously.</p>
 	<p>Observe that while the initial pattern becomes blurred after the first few time-steps, copies of it
 eventually re-emerge after a few more iterations of the animation. Explain this phenomenon.</p>
 
-        <div align = "center">
-            <canvas id = "grid" width = 1750px height = 1750px style = "border:3px solid gray">
-            </canvas>
-        <br><br>
-        <a onclick="playPause();" class="button" id = "playpausebutton">PLAY</a>
-        <a onclick="resetBoard();" class="button" id = "resetbutton">RESET</a>
-        <p id = "messagelog"></p>
-        </div>
-
-        <script src="repl.js"></script>
     </body>
 </html>
