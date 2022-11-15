@@ -8,6 +8,20 @@
     </head>
 
     <body bgcolor="white">
+	    <h1> The Replicating Automaton</h1>
+
+	<p>Consider an infinite two-dimensional grid of square cells which can be coloured either white or black
+(see the interactive application). The white tiles represent the state 0 and the black tiles represent
+the state 1. </p>
+	<p>Start with an pattern of cells on the board (preferably in the centre) and play the animation. The
+initial pattern evolves according to the following rule: at each time step, the colour of a cell is
+changed to the sum of the colours of its four orthogonal neighbours, modulo 2.</p>
+	<p>In other words, the colour of a cell at each step is computed by taking the sum of the colours of the
+cells situated at the top, bottom, left and right (with the convention that black cells represent 1 and
+white cells represent 0) and colouring it white if the sum is even and black if it is odd. Note that all
+cells are updated simultaneously.</p>
+	<p>Observe that while the initial pattern becomes blurred after the first few time-steps, copies of it
+eventually re-emerge after a few more iterations of the animation. Explain this phenomenon.</p>
 
         <div align = "center">
             <canvas id = "grid" width = 1750px height = 1750px style = "border:3px solid gray">
